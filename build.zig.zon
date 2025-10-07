@@ -1,0 +1,16 @@
+.{
+    .name = .lazypath_dupe_bug_repr,
+    .version = "0.0.0",
+    .fingerprint = 0x8c71faee34be4c57, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        .fake_dep = .{
+            .path = "fake-dep",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
